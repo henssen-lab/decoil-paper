@@ -1,0 +1,64 @@
+---
+title: "CHP212 assembly comparison"
+author: "Madalina Giurgiu"
+date: "5/2/2023"
+output: 
+  pdf_document:
+    keep_tex: yes
+    fig_width: 4
+    fig_height: 4
+    fig_caption: yes
+    toc: yes
+  html_document: 
+    toc: yes
+    keep_tex: yes 
+params:
+  root: "/Users/madag/Projects/PhD/github/decoil-paper/celllines/chp212"
+---
+
+```{r setup, echo=FALSE, include=FALSE, message = FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.width=7, out.width="100%", fig.height=4, out.height="100%")
+
+library(pafr)
+library(ggplot2)
+library(gridExtra)
+
+setwd(params$root)
+
+```
+
+Pairwise comparison between decoil, shasta and published CHP212 breakpoints, against hg38:
+
+```{r echo=FALSE}
+
+setwd(params$root)
+paffile1 <- "hg38_decoil.paf"
+ali <- read_paf(paffile1)
+p1 <- dotplot(ali, label_seqs=TRUE, alignment_colour="black", ylab="hg38", xlab="decoil")  + theme_bw()
+
+paffile2 <- "hg38_shasta.paf"
+ali <- read_paf(paffile2)
+p2 <- dotplot(ali, label_seqs=TRUE, alignment_colour="black", ylab="hg38", xlab="shasta")  + theme_bw()
+
+paffile3 <- "hg38_paper.paf"
+ali <- read_paf(paffile3)
+p3 <- dotplot(ali, label_seqs=TRUE, alignment_colour="black", ylab="hg38", xlab="helmsauer_etal_2020")  + theme_bw()
+
+
+grid.arrange(p1, p2, p3, nrow=1)
+```
+Pairwise comparison between decoil, shasta against published CHP212 breakpoints:
+
+```{r, echo=FALSE, message = FALSE, warning=FALSE}
+
+paffile1 <- "paper_decoil.paf"
+ali <- read_paf(paffile1)
+p1 <- dotplot(ali, label_seqs=TRUE, alignment_colour="black", ylab="helmsauer_etal_2020", xlab="decoil")  + theme_bw()
+
+paffile2 <- "paper_shasta.paf"
+ali <- read_paf(paffile2)
+p2 <- dotplot(ali, label_seqs=TRUE, alignment_colour="black", ylab="helmsauer_etal_2020", xlab="shasta")  + theme_bw()
+
+grid.arrange(p1, p2, nrow=1)
+
+```

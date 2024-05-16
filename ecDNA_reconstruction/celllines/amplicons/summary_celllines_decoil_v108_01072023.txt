@@ -1,0 +1,136 @@
+sample	genome	decoil	circ_id	chr_origin	size(MB)	label	topology_idx	topology_name	estimated_proportions
+CHP126_01012021	hg19	decoil_v108_01072023	0	chr1	0.000729		0	simple_circle	24635
+CHP126_01012021	hg19	decoil_v108_01072023	1	chr19,chr1	0.001492		4	multi_region_inter_chr	430
+CHP126_01012021	hg19	decoil_v108_01072023	11	chr19	0.001459		3	multi_region_intra_chr	204
+CHP126_01012021	hg19	decoil_v108_01072023	14	chr19	0.002584		3	multi_region_intra_chr	243
+CHP126_01012021	hg19	decoil_v108_01072023	21	chr19,chr1	0.00402		4	multi_region_inter_chr	138
+CHP126_01012021	hg19	decoil_v108_01072023	18	chr16	0.000958		0	simple_circle	601
+CHP126_01012021	hg19	decoil_v108_01072023	54	chr2	0.14613		3	multi_region_intra_chr	326
+CHP126_01012021	hg19	decoil_v108_01072023	56	chr2	0.253848		3	multi_region_intra_chr	107
+CHP126_01012021	hg19	decoil_v108_01072023	58	chr2	0.529794	ecDNA	3	multi_region_intra_chr	225
+CHP126_01012021	hg19	decoil_v108_01072023	95	chr2	0.456272	ecDNA	3	multi_region_intra_chr	126
+CHP126_01012021	hg19	decoil_v108_01072023	109	chr2	0.148123		6	foldbacks	237
+CHP126_01012021	hg19	decoil_v108_01072023	157	chr2	0.192654		3	multi_region_intra_chr	98
+CHP126_01012021	hg19	decoil_v108_01072023	168	chr2	0.629113	ecDNA	5	simple_duplications	29
+CHP126_01012021	hg19	decoil_v108_01072023	175	chr2	0.271167		3	multi_region_intra_chr	141
+CHP126_01012021	hg19	decoil_v108_01072023	211	chr2	0.428781	ecDNA	3	multi_region_intra_chr	101
+CHP126_01012021	hg19	decoil_v108_01072023	214	chr2	0.406198	ecDNA	3	multi_region_intra_chr	12
+CHP126_01012021	hg19	decoil_v108_01072023	274	chr2	1.222852	ecDNA	3	multi_region_intra_chr	105
+CHP126_01012021	hg19	decoil_v108_01072023	292	chr2	0.11929		3	multi_region_intra_chr	156
+CHP126_01012021	hg19	decoil_v108_01072023	325	chr2	0.7385	ecDNA	3	multi_region_intra_chr	148
+CHP126_01012021	hg19	decoil_v108_01072023	344	chr2	9.225339	ecDNA	3	multi_region_intra_chr	126
+CHP126_01012021	hg19	decoil_v108_01072023	385	chr2	0.080242		3	multi_region_intra_chr	20
+CHP126_01012021	hg19	decoil_v108_01072023	394	chr2	0.732004	ecDNA	3	multi_region_intra_chr	33
+CHP126_01012021	hg19	decoil_v108_01072023	435	chr2	0.399978	ecDNA	5	simple_duplications	11
+CHP126_01012021	hg19	decoil_v108_01072023	448	chr2	0.382684	ecDNA	3	multi_region_intra_chr	54
+CHP126_01012021	hg19	decoil_v108_01072023	465	chr2	0.651391	ecDNA	6	foldbacks	10
+CHP126_01012021	hg19	decoil_v108_01072023	478	chr2	0.519722	ecDNA	5	simple_duplications	16
+CHP126_01012021	hg19	decoil_v108_01072023	480	chr6	0.009245		5	simple_duplications	240
+CHP126_01012021	hg19	decoil_v108_01072023	419	chr6	0.00372		3	multi_region_intra_chr	102
+CHP126_01012021	hg19	decoil_v108_01072023	420	chr6	0.002799		3	multi_region_intra_chr	1177
+CHP126_01012021	hg19	decoil_v108_01072023	421	chr6	0.002508		1	simple_sv	1131
+CHP126_01012021	hg19	decoil_v108_01072023	424	chr6	0.006228		5	simple_duplications	67
+CHP126_01012021	hg19	decoil_v108_01072023	425	chr8	0.000939		0	simple_circle	2392
+CHP126_01012021	hg19	decoil_v108_01072023	426	chrM	0.01657		0	simple_circle	565
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	0	chr2	1.691816	ecDNA	3	multi_region_intra_chr	440
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	2	chr16	0.003074		1	simple_sv	3241
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	11	chr16	0.008467		3	multi_region_intra_chr	969
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	12	chr16	0.013858		5	simple_duplications	509
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	14	chr16	0.007823		3	multi_region_intra_chr	663
+CHP212_WGS_14122021	hg38	decoil_v108_01072023	23	chrM	0.016568		0	simple_circle	1797
+CLBGA_01012021	hg19	decoil_v108_01072023	0	chr1	0.001377		0	simple_circle	3983
+CLBGA_01012021	hg19	decoil_v108_01072023	1	chr6	0.002621		0	simple_circle	514
+CLBGA_01012021	hg19	decoil_v108_01072023	2	chr7	0.00105		0	simple_circle	1039
+CLBGA_01012021	hg19	decoil_v108_01072023	3	chr7	0.000976		0	simple_circle	1055
+CLBGA_01012021	hg19	decoil_v108_01072023	4	chrM	0.01657		0	simple_circle	560
+LAN5_01012021	hg19	decoil_v108_01072023	0	chr1	0.000572		0	simple_circle	21785
+LAN5_01012021	hg19	decoil_v108_01072023	1	chr1,chr19	0.001181		4	multi_region_inter_chr	143
+LAN5_01012021	hg19	decoil_v108_01072023	2	chr19	0.001639		0	simple_circle	1317
+LAN5_01012021	hg19	decoil_v108_01072023	3	chr1,chr19	0.007548		4	multi_region_inter_chr	284
+LAN5_01012021	hg19	decoil_v108_01072023	4	chr7	0.001229		3	multi_region_intra_chr	5192
+LAN5_01012021	hg19	decoil_v108_01072023	5	chr18	0.005091		0	simple_circle	277
+LAN5_01012021	hg19	decoil_v108_01072023	14	chr2	1.163964	ecDNA	3	multi_region_intra_chr	226
+LAN5_01012021	hg19	decoil_v108_01072023	16	chr2	1.568072	ecDNA	3	multi_region_intra_chr	25
+LAN5_01012021	hg19	decoil_v108_01072023	18	chr2	0.961859	ecDNA	3	multi_region_intra_chr	183
+LAN5_01012021	hg19	decoil_v108_01072023	22	chr2	0.321807	ecDNA	3	multi_region_intra_chr	157
+LAN5_01012021	hg19	decoil_v108_01072023	23	chr2	0.627569	ecDNA	3	multi_region_intra_chr	278
+LAN5_01012021	hg19	decoil_v108_01072023	47	chr2	0.773263	ecDNA	3	multi_region_intra_chr	23
+LAN5_01012021	hg19	decoil_v108_01072023	29	chr4	0.00259		0	simple_circle	150
+LAN5_01012021	hg19	decoil_v108_01072023	32	chr6	0.004543		3	multi_region_intra_chr	530
+LAN5_01012021	hg19	decoil_v108_01072023	33	chr6	0.002123		3	multi_region_intra_chr	313
+LAN5_01012021	hg19	decoil_v108_01072023	37	chr6	0.004568		3	multi_region_intra_chr	252
+LAN5_01012021	hg19	decoil_v108_01072023	31	chr6	0.002445		0	simple_circle	440
+LAN5_01012021	hg19	decoil_v108_01072023	40	chr8	0.001059		0	simple_circle	2346
+LAN5_01012021	hg19	decoil_v108_01072023	41	chr8	0.002847		3	multi_region_intra_chr	1442
+LAN5_01012021	hg19	decoil_v108_01072023	42	chrM	0.01657		0	simple_circle	791
+RH4_AZDr_01122021	hg38	decoil_v108_01072023	0	chrM	0.016568		0	simple_circle	86
+RH4_BAYr_01122021	hg38	decoil_v108_01072023	0	chrM	0.016568		0	simple_circle	50
+SKNFI_01012021	hg19	decoil_v108_01072023	0	chr1	0.000596		0	simple_circle	34
+SKNFI_01012021	hg19	decoil_v108_01072023	1	chr1	0.003718		0	simple_circle	251
+SKNFI_01012021	hg19	decoil_v108_01072023	2	chr1	0.001359		0	simple_circle	38
+SKNFI_01012021	hg19	decoil_v108_01072023	3	chr6	0.000721		0	simple_circle	31
+SKNFI_01012021	hg19	decoil_v108_01072023	4	chr6	0.002058		3	multi_region_intra_chr	4728
+SKNFI_01012021	hg19	decoil_v108_01072023	6	chr6	0.001525		3	multi_region_intra_chr	6916
+SKNFI_01012021	hg19	decoil_v108_01072023	7	chr6	0.003452		3	multi_region_intra_chr	916
+SKNFI_01012021	hg19	decoil_v108_01072023	8	chr6	0.003583		5	simple_duplications	183
+SKNFI_01012021	hg19	decoil_v108_01072023	9	chr7	0.000648		0	simple_circle	31
+SKNFI_01012021	hg19	decoil_v108_01072023	10	chr7	0.000584		0	simple_circle	36
+SKNFI_01012021	hg19	decoil_v108_01072023	11	chr7	0.002513		3	multi_region_intra_chr	958
+SKNFI_01012021	hg19	decoil_v108_01072023	12	chr7	0.000639		0	simple_circle	30
+SKNFI_01012021	hg19	decoil_v108_01072023	13	chr7	0.000516		0	simple_circle	38
+SKNFI_01012021	hg19	decoil_v108_01072023	14	chr10	0.003132		0	simple_circle	121
+SKNFI_01012021	hg19	decoil_v108_01072023	15	chr10	0.001034		0	simple_circle	1883
+SKNFI_01012021	hg19	decoil_v108_01072023	16	chrM	0.01657		0	simple_circle	3513
+SKNFI_01012021	hg19	decoil_v108_01072023	17	chr11	0.000561		0	simple_circle	32
+SKNFI_01012021	hg19	decoil_v108_01072023	18	chr12	0.000504		0	simple_circle	43
+SKNFI_01012021	hg19	decoil_v108_01072023	19	chr12	0.000875		0	simple_circle	45
+SKNFI_01012021	hg19	decoil_v108_01072023	20	chr12	0.000901		0	simple_circle	56
+SKNFI_01012021	hg19	decoil_v108_01072023	21	chr12	0.000535		0	simple_circle	38
+SKNFI_01012021	hg19	decoil_v108_01072023	22	chr12	0.000664		0	simple_circle	39
+SKNFI_01012021	hg19	decoil_v108_01072023	23	chr12	0.001272		0	simple_circle	45
+SKNFI_01012021	hg19	decoil_v108_01072023	24	chr12	0.000808		0	simple_circle	39
+SKNFI_01012021	hg19	decoil_v108_01072023	25	chr13	0.000627		0	simple_circle	41
+SKNFI_01012021	hg19	decoil_v108_01072023	26	chr13	0.001048		0	simple_circle	38
+SKNFI_01012021	hg19	decoil_v108_01072023	59	chr16	0.010259		6	foldbacks	249
+SKNFI_01012021	hg19	decoil_v108_01072023	28	chr16	0.003375		0	simple_circle	198
+SKNFI_01012021	hg19	decoil_v108_01072023	30	chr17	0.00053		0	simple_circle	64
+SKNFI_01012021	hg19	decoil_v108_01072023	33	chr18	0.004892		3	multi_region_intra_chr	624
+SKNFI_01012021	hg19	decoil_v108_01072023	34	chr18	0.004142		0	simple_circle	626
+SKNFI_01012021	hg19	decoil_v108_01072023	37	chr18	0.008188		3	multi_region_intra_chr	412
+SKNFI_01012021	hg19	decoil_v108_01072023	38	chr19	0.002402		3	multi_region_intra_chr	1626
+SKNFI_01012021	hg19	decoil_v108_01072023	39	chr19	0.002042		3	multi_region_intra_chr	1248
+SKNFI_01012021	hg19	decoil_v108_01072023	45	chr19	0.000626		0	simple_circle	43
+SKNFI_01012021	hg19	decoil_v108_01072023	46	chr21	0.001746		0	simple_circle	378
+SKNFI_01012021	hg19	decoil_v108_01072023	47	chr21	0.000679		0	simple_circle	194
+SKNFI_01012021	hg19	decoil_v108_01072023	48	chr3	0.000609		0	simple_circle	32
+SKNFI_01012021	hg19	decoil_v108_01072023	49	chr4	0.002594		0	simple_circle	709
+SKNFI_01012021	hg19	decoil_v108_01072023	50	chr8	0.001026		0	simple_circle	29
+SKNFI_01012021	hg19	decoil_v108_01072023	52	chr8	0.002149		3	multi_region_intra_chr	8433
+SKNFI_01012021	hg19	decoil_v108_01072023	53	chr8	0.005339		3	multi_region_intra_chr	118
+SKNFI_01012021	hg19	decoil_v108_01072023	55	chr8	0.005904		3	multi_region_intra_chr	47
+SKNFI_01012021	hg19	decoil_v108_01072023	56	chr9	0.000624		0	simple_circle	38
+SKNFI_01012021	hg19	decoil_v108_01072023	57	chr9	0.000681		0	simple_circle	40
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	3	chr2	2.175929	ecDNA	3	multi_region_intra_chr	171
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	14	chr16	0.002268		3	multi_region_intra_chr	628
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	15	chr16	0.001731		1	simple_sv	3211
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	16	chr16	0.003999		5	simple_duplications	179
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	17	chr16	0.00319		3	multi_region_intra_chr	1503
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	25	chr16	0.00887		5	simple_duplications	164
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	32	chr16	0.006022		3	multi_region_intra_chr	243
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	45	chr16	0.009212		5	simple_duplications	106
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	47	chr16	0.007915		3	multi_region_intra_chr	104
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	70	chr16	0.008439		3	multi_region_intra_chr	265
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	84	chr16	0.01239		5	simple_duplications	58
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	97	chr16	0.010422		5	simple_duplications	108
+STA-NB-10-DM_26042021	hg38	decoil_v108_01072023	85	chrM	0.016568		0	simple_circle	299
+TR14_WGS_20022022	hg38	decoil_v108_01072023	0	chr2	0.246777		3	multi_region_intra_chr	126
+TR14_WGS_20022022	hg38	decoil_v108_01072023	7	chr2	0.716187	ecDNA	3	multi_region_intra_chr	488
+TR14_WGS_20022022	hg38	decoil_v108_01072023	4	chr12,chr2	0.686841	ecDNA	4	multi_region_inter_chr	89
+TR14_WGS_20022022	hg38	decoil_v108_01072023	8	chr1,chr2	1.095274	ecDNA	4	multi_region_inter_chr	22
+TR14_WGS_20022022	hg38	decoil_v108_01072023	9	chr12	1.010171	ecDNA	0	simple_circle	109
+TR14_WGS_20022022	hg38	decoil_v108_01072023	10	chr16	0.005675		0	simple_circle	614
+TR14_WGS_20022022	hg38	decoil_v108_01072023	14	chr16	0.008998		0	simple_circle	179
+TR14_WGS_20022022	hg38	decoil_v108_01072023	16	chr16	0.015462		3	multi_region_intra_chr	197
+TR14_WGS_20022022	hg38	decoil_v108_01072023	18	chr16	0.008575		3	multi_region_intra_chr	257
+TR14_WGS_20022022	hg38	decoil_v108_01072023	20	chr16	0.01425		3	multi_region_intra_chr	56
+TR14_WGS_20022022	hg38	decoil_v108_01072023	26	chrM	0.016568		0	simple_circle	290

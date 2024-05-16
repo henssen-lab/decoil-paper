@@ -1,0 +1,2 @@
+ChrA	PosA	OrientationA	ChrB	PosB	OrientationB	SnifflesAccuracy	SnifflesReadSupport
+chr12	69041358	-	chr12	70051525	+	PRECISE	77

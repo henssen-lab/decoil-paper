@@ -1,0 +1,167 @@
+---
+title: "TR14 reconstruction"
+author: "Madalina Giurgiu"
+date: "5/2/2023"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+params:
+  root: /Volumes/henssen_lab/data/Nanopore/Celllines/Process/TR14_WGS_20022022/hg38
+  fname: /Volumes/henssen_lab/data/Nanopore/Celllines/Process/TR14_WGS_20022022/hg38/decoil_v108_tuned/reconstruct.ecDNA.pdf
+  nodefile: decoil_v108_tuned/reconstruct.ecDNA.bed
+  edgesfile: decoil_v108_tuned/reconstruct.links.ecDNA.txt
+  sample: TR14_WGS_20022022
+  bw: coverage_hg38.bw
+  maxcov: 600
+  refgenome: /Users/madag/Projects/PhD/reference/GRCh38.primary_assembly.genome.fa
+  gencode: /Users/madag/Projects/PhD/github/reconstruct/simulation/data/annotation/gencode_hg38
+  anno: /Users/madag/Projects/PhD/annotation/gencode.v42.protein_coding_genes.txt
+  gtf: /Users/madag/Projects/PhD/annotation/gencode.v42.primary_assembly.basic.annotation.gtf
+---
+
+```{r setup, echo=FALSE, include=FALSE, message = FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.width=7, out.width="100%", fig.height=8, out.height="100%")
+library(rtracklayer)
+library(pafr)
+library(ggplot2)
+library(gridExtra)
+library(gTrack)
+library(gGnome)
+library(GenomicRanges)
+library(dplyr)
+library(parallel)
+
+nodesfile <- paste(params$root, params$nodefile, sep="/")
+edgesfile <- paste(params$root, params$edgesfile, sep="/")
+bwfile <- paste(params$root, params$bw, sep="/")
+sample <- params$sample
+pdfile <- params$fname
+refgenome <- params$refgenome
+annofile <- params$anno
+maxcov <- params$maxcov
+gtffile <- params$gtf
+```
+
+### Configuration:
+
+- Sample: `r sample`
+- Genomic regions: `r nodesfile`
+- Linking regions: `r edgesfile`
+- Coverage: `r bwfile`
+- Output: `r pdfile`
+- Reference genome: `r refgenome`
+- Annotation: GENCODE v42
+
+### Reconstruction of the ecDNA amplicons
+
+Display every possible amplicon.
+
+```{r , echo=FALSE, message = FALSE, warning=FALSE}
+Sys.setenv(GENCODE_DIR=params$gencode)
+gencode = track.gencode(stack.gap = 1e+06, cex.label = 0.3, height = 100,
+                        name = 'GENCODE', cached = T, 
+                        cached.dir = Sys.getenv("GENCODE_DIR"),
+                        labels.suppress.gr=T, gene.collapse = T,
+                        genes=c("MYCN","MDM2","DDX1","TRIB3","LPIN1","NBAS","GACAT3","CDK4","SMC6","GEN1","SAMD11"))
+                        # genes=read.csv2(annofile,header=F,"\t")$V1)
+```
+
+```{r, echo=FALSE, include=FALSE, message = FALSE, warning=FALSE}
+#### 2. Read nodes 
+df_nodes <- read.csv2(nodesfile,header=T,sep="\t")
+gr_nodes <- makeGRangesFromDataFrame(df_nodes,
+                                     keep.extra.columns=TRUE,
+                                     ignore.strand=FALSE,
+                                     seqinfo=NULL,
+                                     seqnames.field=c("X.chr","seqnames", "seqname",
+                                                      "chromosome", "chrom",
+                                                      "chr", "chromosome_name",
+                                                      "seqid"),
+                                     start.field="start",
+                                     end.field=c("end", "stop"),
+                                     strand.field="strand",
+                                     starts.in.df.are.0based=FALSE)
+
+#### 3. Read edges
+df_edges <- read.csv2(edgesfile,header=T,sep="\t")
+
+```
+
+```{r, echo=FALSE, warning=FALSE, results='asis'}
+
+library(rmarkdown)
+#### 5. Draw circles
+
+draw_amplicon <- function(s, bwpath, maxcov, df_edges, gr_nodes){
+  
+  gg_all <- c()
+  gRangesCov <- import(bwpath)
+  gTrackCov <- gTrack(gRangesCov, y.field="score", line=TRUE, name = "COV", y0=0, y1=maxcov, height=60)
+
+  individual_circles <- unique(df_edges$circ_id)
+  
+  current_nrnodes <- 0
+  for( circ in individual_circles){
+    
+    print(paste0("Sample ",s, " circ_id ", circ))
+    nodes1 <- gr_nodes[(elementMetadata(gr_nodes)[, "circ_id"] == circ)]
+    edges1 <- df_edges[df_edges$circ_id==circ,]
+
+    # reset nodes numbering 
+    rownames(edges1) <- NULL
+    edges1$n1 <- edges1$n1 - current_nrnodes
+    edges1$n2 <- edges1$n2 - current_nrnodes
+    
+    gg1 = gG(nodes = nodes1, 
+             edges = edges1, 
+             meta = list(gr.colorfield = 'type'))
+    
+    gg1$set(name = circ, height = 60)
+    if (length(gg_all) > 0){
+      gg_all <- c(gg_all, gg1$gt)
+    }else{
+      gg_all <- c(gg1$gt)
+    }
+    current_nrnodes <- current_nrnodes + length(nodes1)
+    
+    windows <- copy(nodes1) + 200000
+    windows <- reduce(windows)
+    plot(c(gencode, gTrackCov, gg1$gt), windows)
+  
+  }
+  
+  return(c(gTrackCov, gg_all))
+  
+}
+
+p1 <- draw_amplicon(sample, bwfile, maxcov, df_edges, gr_nodes)
+
+```
+
+### Summary of all found ecDNA amplicons
+
+```{r, echo=FALSE}
+library(rmarkdown)
+paged_table(df_nodes)
+```
+
+```{r, echo=FALSE, fig.width=7, out.width="100%", fig.height=11, out.height="100%"}
+
+pdf(pdfile,
+    colormodel = "cmyk",
+    paper = "A4",
+    pointsize = 10
+)
+
+windows <- copy(gr_nodes) + 200000
+windows <- reduce(windows)
+plot(c(gencode,p1), windows)
+
+dev.off()
+
+plot(c(gencode,p1), windows)
+
+
+```
