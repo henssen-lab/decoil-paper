@@ -6,3 +6,5 @@ data/ecDNA_reconstruction/validation
 data/ecDNA_mixtures/
 data/simulation_benchmarking/
 data/lasso_experiments/
+/**/.ipynb_checkpoints/
+/**/.DS_Store
