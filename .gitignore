@@ -1,2 +1,4 @@
 # ignore data folder
-data/
+data/celllines
+data/patients
+data/validation
