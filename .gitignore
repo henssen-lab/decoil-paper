@@ -1,4 +1,8 @@
 # ignore data folder
-data/celllines
-data/patients
-data/validation
+data/ecDNA_reconstruction/
+data/ecDNA_reconstruction/celllines
+data/ecDNA_reconstruction/patients
+data/ecDNA_reconstruction/validation
+data/ecDNA_mixtures/
+data/simulation_benchmarking/
+data/lasso_experiments/
