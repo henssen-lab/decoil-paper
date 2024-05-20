@@ -1,36 +1,50 @@
-Script and analysis for the Giurgiu et al. 2024.
+Scripts and analysis for the Giurgiu et al. 2024. "Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil".
+
+## Software release:
+
+- Decoil tool: [decoil-pre-1.1.2-slim](https://zenodo.org/api/records/10785693/draft/files/decoil-pre-1.1.2-slim.zip/content)
+- Decoil vizualization tools: [decoil-viz-1.0.3](https://zenodo.org/api/records/10785693/draft/files/decoil-viz-1.0.3.zip/content)
+- Simulate ecDNA templates: 
+- Simulate reads using a circular .fasta with an improved pseudonumber generator (adapted PBSIM2): [pbsim2-1.0.0beta.zip](https://zenodo.org/api/records/10785693/draft/files/pbsim2-1.0.0beta.zip/content) 
+- Pipeline for simulating and processing ecDNA: [ecDNA-simulate-validate-pipeline-1.0.1](https://zenodo.org/api/records/10785693/draft/files/ecDNA-simulate-validate-pipeline-1.0.1.zip/content)
+
+## Linked repositories:
+- https://github.com/madagiurgiu25/decoil-pre
+- https://github.com/madagiurgiu25/decoil-viz
+- https://github.com/madagiurgiu25/ecDNA-sim
+- https://github.com/madagiurgiu25/ecDNA-simulate-validate-pipeline
+- https://github.com/madagiurgiu25/pbsim2
+
+## Zenodo
+To access the data linked to this analysis go to https://zenodo.org/uploads/10785693.
+The raw sequencing is deposited under EGA50000000335.
+
+## Code and analysis for the paper (overview):
+- ### 1. [Decoil development]((docs/decoil.md))
+  - Decoil
+  - Decoil-viz
+  - Linear models comparison to deconvolve ecDNA elements from simulated overlapping fragments data
+- ### 2. [Simulations](docs/simulations.md) and [benchmarking](docs/bechmarking.md)
+  - Simulate ecDNA sequence templates (.fasta)
+  - Simulate and pre-process in-silico long-read ecDNA-containing samples (.fastq, .bam, .bw, .vcf)
+  - Alignment-free ecDNA reconstruction using Shasta from simulated data
+  - Alignment-based ecDNA reconstruction using Decoil from simulated data
+  - Alignment-based ecDNA reconstruction using CReSIL from simulated data
+  - Performance evaluation on simulated data for Decoil, Shasta and CReSIL
+- ### 3. Generate ecDNA mixtures and evaluate amplicon's breakpoints
+- ### 4. ecDNA reconstruction for cellines and patient data 
+- ### 5. Paper figures
+
+<br/><br/>
 
 # 1. Decoil development
 
-## 1.1 Decoil
-
-Decoil implementation for reconstructing ecDNA structure heterogeneity from sequencing data is available freely on Github https://github.com/madagiurgiu25/decoil-pre.<br/>
-Decoil 1.1.2-slim release available on [zenodo](https://zenodo.org/uploads/10785693).
-
-## 1.2 Decoil-viz
-
-Decoil-viz for visualizing the amplicon threads and summarize the genomic regions on the amplicon is available on Github https://github.com/madagiurgiu25/decoil-viz.<br/>
-Decoil-viz 1.0.3 release available on [zenodo](https://zenodo.org/uploads/10785693).
-
-## 1.3 Linear models comparison to deconvolve ecDNA elements from simulated overlapping fragments data
-
-Simulation of overlapping ecDNA elements and reasoning of chosing LASSO model over other linear models for the likely ecDNA candidates selection.
-
-```
-lasso_experiments/4_Decoil_Dev_2.ipynb
-```
-
+Go to [decoil](docs/decoil.md).
 
 # 2. Simulations and benchmarking
+This part of the paper describes the ecDNA simulation and performance evaluation.
 
-
-## 
-## 2.1 Simulate ecDNA sequence templates
-## 2.2 Simulate in-silico long-read ecDNA-containing samples
-## 2.3 Alignment-free ecDNA reconstruction using Shasta from simulated data
-## 2.4 Alignment-based ecDNA reconstruction using Decoil from simulated data
-## 2.5 Alignment-based ecDNA reconstruction using CReSIL from simulated data
-## 2.6 Performance evaluation on simulated data for Decoil, Shasta and CReSIL
+Go to [simulations](docs/simulations.md) and [benchmarking](docs/bechmarking.md).
 
 # 3. Evaluate amplicon's breakpoints recovery in ecDNA mixtures
 
@@ -52,4 +66,17 @@ Pair-wise mixtures of ecDNA containing celllines at different ratios
 
 # 5. ecDNA properties
 
+## Citation
 
+If you use this code please cite our pre-print:
+
+Madalina Giurgiu, Nadine Wittstruck, Elias Rodriguez-Fos, Rocio Chamorro Gonzalez, Lotte Bruckner, Annabell Krienelke-Szymansky, Konstantin Helmsauer, Anne Hartebrodt, Richard P. Koche, Kerstin Haase, Knut Reinert, Anton G. Henssen. Decoil: Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil. bioRxiv, 2023, DOI: https://doi.org/10.1101/2023.11.15.567169
+
+## License
+
+The code is distributed under BSD-3-Clause license. See [LICENSE](LICENSE) for details.
+
+## Contact
+
+For any questions do no hesitate to contact us.<br/>
+Author: Madalina Giurgiu (madalina.giurgiu@charite.de)
