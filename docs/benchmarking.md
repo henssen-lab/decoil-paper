@@ -39,13 +39,13 @@ cd simulation_benchmarking/benchmarking/quast
 bash install.sh
 
 # run Quast for Decoil, Shasta and CReSIL for the simulations
-sbatch run_quast_decoil.sh
-sbatch run_quast_shasta.sh
-sbatch run_quast_cresil.sh
+sbatch run_quast_decoil.sh <rootdir>
+sbatch run_quast_shasta.sh <rootdir>
+sbatch run_quast_cresil.sh <rootdir>
 
 # collect all results
 # output: collect_metrics.txt
 bash run_collect_metrics.sh
 ```
 
-The output `collect_metrics.txt` is under `../data/simulation_benchmarking/benckmarking/collect_metrics.txt` (https://zenodo.org/uploads/10785693).
+The output is [collect_metrics.txt](../data/simulation_benchmarking/benckmarking/collect_metrics.txt) (https://zenodo.org/uploads/10785693).
