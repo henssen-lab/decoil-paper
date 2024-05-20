@@ -47,10 +47,9 @@ This part of the paper describes the ecDNA simulation and performance evaluation
 Go to [simulations](docs/simulations.md) and [benchmarking](docs/benchmarking.md).
 
 # 3. Evaluate amplicon's breakpoints recovery in ecDNA mixtures
+Pair-wise mixtures of ecDNA containing samples at different ratios and reconstruction of co-occurring ecDNA elements using Decoil.
 
-Pair-wise mixtures of ecDNA containing celllines at different ratios 
-- Generate mixtures
-- Compute breakpoint recovery
+Go to [mixtures](docs/mixtures.md)
 
 # 4. ecDNA reconstruction for cellines and patient data 
 
