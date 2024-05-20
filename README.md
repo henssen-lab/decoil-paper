@@ -44,7 +44,7 @@ Go to [decoil](docs/decoil.md).
 # 2. Simulations and benchmarking
 This part of the paper describes the ecDNA simulation and performance evaluation.
 
-Go to [simulations](docs/simulations.md) and [benchmarking](docs/bechmarking.md).
+Go to [simulations](docs/simulations.md) and [benchmarking](docs/benchmarking.md).
 
 # 3. Evaluate amplicon's breakpoints recovery in ecDNA mixtures
 

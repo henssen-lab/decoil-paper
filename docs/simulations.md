@@ -64,11 +64,10 @@ Pipeline output example for `simulate-mapping-sv` mode ([example sim_1501](https
 │   └── ngmlr.bam.bai
 ├── reads
 │   ├── circle-template.bed
-│   └── circle-template.fastq.gz
+│   └── circle-template.fastq
 ├── sv
 │   ├── sv.sniffles.bedpe
 │   └── sv.sniffles.vcf
 ```
-
 
 The Decoil reconstructions for the ecDNA simulations are available under `../data/simulation_benchmarking/simulation_ecDNA_samples/reconstruction_merged_v112_02022024.txt` (https://zenodo.org/uploads/10785693).
