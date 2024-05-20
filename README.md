@@ -32,6 +32,10 @@ The raw sequencing is deposited under EGA50000000335.
   - Alignment-based ecDNA reconstruction using CReSIL from simulated data
   - Performance evaluation on simulated data for Decoil, Shasta and CReSIL
 - ### 3. Generate ecDNA mixtures and evaluate amplicon's breakpoints
+  - Downsampling to 10,25,50,75,90% for the three celllines
+  - Generate mixtures 100-10, 100-25, 100-50, 100-75, 100-90% 
+  - Process all mixtures, i.e. SV calling, Decoil reconstruction, aggregate results
+  - Compute amplicion breakpoints recovery in the dilutions
 - ### 4. ecDNA reconstruction for cellines and patient data 
 - ### 5. Paper figures
 
