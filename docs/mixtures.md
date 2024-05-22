@@ -28,4 +28,4 @@ Install:
     - ggplot2
 
 See [AmpliconRecovery.ipynb](../ecDNA_mixtures/AmpliconRecovery.ipynb) notebook. 
-Output [breakpoints_recovery_merged.png](../data/ecDNA_mixtures/breakpoints_recovery_merged.png) (https://zenodo.org/uploads/10785693).
+Output [breakpoints_recovery_merged.png](../data/ecDNA_mixtures/breakpoints_recovery_merged.png) (https://doi.org/10.5281/zenodo.10785693).

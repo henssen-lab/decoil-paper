@@ -48,4 +48,4 @@ sbatch run_quast_cresil.sh <rootdir>
 bash run_collect_metrics.sh
 ```
 
-The output is [collect_metrics.txt](../data/simulation_benchmarking/benckmarking/collect_metrics.txt) (https://zenodo.org/uploads/10785693).
+The output is [collect_metrics.txt](../data/simulation_benchmarking/benckmarking/collect_metrics.txt) (https://doi.org/10.5281/zenodo.10785693).
