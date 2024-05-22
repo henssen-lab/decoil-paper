@@ -17,7 +17,7 @@ SURVIVOR vcftobed $s/sv.sniffles.vcf -1 -1 $s/sv.sniffles.bedpe
 decoil filter -i $s/sv.sniffles.vcf -o $s/sv.sniffles.filtered.vcf
 SURVIVOR vcftobed $s/sv.sniffles.filtered.vcf -1 -1 $s/sv.sniffles.filtered.bedpe
 
-mkdir -p $s/decoil_v112_0702024
+mkdir -p $s/decoil_v108_01072023
 decoil reconstruct \
     --min-vaf 0.01 --min-cov-alt 10 --min-cov 10 --max-explog-threshold 0.01 \
     --fragment-min-cov 10 --fragment-min-size 500 \
@@ -26,4 +26,4 @@ decoil reconstruct \
     --bam raw_dilutions/$s.bam \s
     --coverage $s/coverage.bw \
     --name $s \
-    --output $s/decoil_v112_0702024
+    --output $s/decoil_v108_01072023

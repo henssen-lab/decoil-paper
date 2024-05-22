@@ -4,7 +4,7 @@ Scripts and analysis for the Giurgiu et al. 2024. "Reconstructing extrachromosom
 
 - Decoil tool: [decoil-pre-1.1.2-slim](https://zenodo.org/api/records/10785693/draft/files/decoil-pre-1.1.2-slim.zip/content)
 - Decoil vizualization tools: [decoil-viz-1.0.3](https://zenodo.org/api/records/10785693/draft/files/decoil-viz-1.0.3.zip/content)
-- Simulate ecDNA templates: 
+- Simulate ecDNA templates: [ecDNA-sim-1.0.0](https://zenodo.org/api/records/10785693/draft/files/ecDNA-sim-1.0.0.zip/content)
 - Simulate reads using a circular .fasta with an improved pseudonumber generator (adapted PBSIM2): [pbsim2-1.0.0beta.zip](https://zenodo.org/api/records/10785693/draft/files/pbsim2-1.0.0beta.zip/content) 
 - Pipeline for simulating and processing ecDNA: [ecDNA-simulate-validate-pipeline-1.0.1](https://zenodo.org/api/records/10785693/draft/files/ecDNA-simulate-validate-pipeline-1.0.1.zip/content)
 
@@ -31,12 +31,17 @@ The raw sequencing is deposited under EGA50000000335.
   - Alignment-based ecDNA reconstruction using Decoil from simulated data
   - Alignment-based ecDNA reconstruction using CReSIL from simulated data
   - Performance evaluation on simulated data for Decoil, Shasta and CReSIL
-- ### 3. Generate ecDNA mixtures and evaluate amplicon's breakpoints
+- ### 3. Generate ecDNA [mixtures](docs/mixtures.md) and evaluate amplicon's breakpoints
   - Downsampling to 10,25,50,75,90% for the three celllines
   - Generate mixtures 100-10, 100-25, 100-50, 100-75, 100-90% 
   - Process all mixtures, i.e. SV calling, Decoil reconstruction, aggregate results
   - Compute amplicion breakpoints recovery in the dilutions
-- ### 4. ecDNA reconstruction for cellines and patient data 
+- ### 4. ecDNA [reconstruction](docs/reconstruction_celllines_patients.md) for cellines and patient data 
+  - Preprocess nanopore sequencing data from cell lines and patient samples
+  - Reconstruct ecDNA elements for cell lines using Decoil
+  - Reconstruct ecDNA elements for patient samples using Decoil
+  - Perform de-novo assembly for cell lines using Shasta
+  - [Compare](docs/compare_shasta_decoil.md) Decoil and Shasta outputs against the against published ecDNA structures
 - ### 5. Paper figures
 
 <br/><br/>
@@ -53,21 +58,17 @@ Go to [simulations](docs/simulations.md) and [benchmarking](docs/benchmarking.md
 # 3. Evaluate amplicon's breakpoints recovery in ecDNA mixtures
 Pair-wise mixtures of ecDNA containing samples at different ratios and reconstruction of co-occurring ecDNA elements using Decoil.
 
-Go to [mixtures](docs/mixtures.md)
+Go to [mixtures](docs/mixtures.md).
 
 # 4. ecDNA reconstruction for cellines and patient data 
+Apply Decoil on celllines and patient data. Go to [reconstruction](docs/reconstruction_celllines_patients.md).
 
-## 4.1 Preprocess nanopore sequencing data from cell lines and patient samples
+Additionally, the reconstruction and de-novo assembly for cell lines are compared against validated structures. Go to [comparison](docs/compare_shasta_decoil.md).
 
-## 4.2 Reconstruct ecDNA elements for cell lines
+# 5. Paper figures
 
-### 4.2.1 Perform de-novo assembly for cell lines using Shasta
+Go to [figures](docs/figures.md)
 
-### 4.2.1 Compare Decoil and Shasta outputs against the against published ecDNA structures
-
-## 4.3 Reconstruct ecDNA elements fro patient samples using Decoil
-
-# 5. ecDNA properties
 
 ## Citation
 
