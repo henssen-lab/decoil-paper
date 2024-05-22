@@ -20,11 +20,11 @@ To access the data linked to this analysis go to https://zenodo.org/uploads/1078
 The raw sequencing is deposited under EGA50000000335.
 
 ## Code and analysis for the paper (overview):
-- ### 1. [Decoil development]((docs/decoil.md))
+- ### 1. [Decoil development](docs/decoil.md)
   - Decoil
   - Decoil-viz
   - Linear models comparison to deconvolve ecDNA elements from simulated overlapping fragments data
-- ### 2. [Simulations](docs/simulations.md) and [benchmarking](docs/bechmarking.md)
+- ### 2. [Simulations](docs/simulations.md) and [benchmarking](docs/benchmarking.md)
   - Simulate ecDNA sequence templates (.fasta)
   - Simulate and pre-process in-silico long-read ecDNA-containing samples (.fastq, .bam, .bw, .vcf)
   - Alignment-free ecDNA reconstruction using Shasta from simulated data
