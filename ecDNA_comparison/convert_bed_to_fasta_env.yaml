@@ -1,0 +1,10 @@
+name: bed2fasta
+channels:
+  - bioconda
+  - conda-forge
+  - default
+dependencies:
+  - python==3.11
+  - biopython==1.81
+  - numpy==1.24.3
+  - pandas==2.0.1

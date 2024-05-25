@@ -1,0 +1,27 @@
+name: assembly_compare
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - bedtools=2.30.0
+  - bzip2=1.0.8
+  - ca-certificates=2023.5.7
+  - k8=0.2.5
+  - libcxx=16.0.3
+  - libffi=3.4.2
+  - libsqlite=3.40.0
+  - libzlib=1.2.13
+  - minimap2=2.26
+  - ncurses=6.3
+  - openssl=3.1.0
+  - pip=23.1.2
+  - python=3.7.12
+  - readline=8.2
+  - setuptools=67.7.2
+  - sqlite=3.40.0
+  - tk=8.6.12
+  - wheel=0.40.0
+  - xz=5.2.6
+  - zlib=1.2.13
+prefix: /Users/madag/miniconda3/envs/assembly_compare
