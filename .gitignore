@@ -1,4 +1,5 @@
 # ignore data folder
+data/figures
 data/ecDNA_reconstruction/
 data/ecDNA_mixtures/
 data/simulation_benchmarking/

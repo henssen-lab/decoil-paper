@@ -60,12 +60,12 @@ This is available also as docker container [madagiurgiu25/decoil:1.1.2-slim](htt
 ### 4.2.2 Run reconstruction for cell lines
 
 ```bash
-sbatch ../ecDNA_reconstruction/celllines/run_decoil_v112_07022024_slurmarray_celllines_hg19.sh
-sbatch ../ecDNA_reconstruction/celllines/run_decoil_v112_07022024_slurmarray_celllines_hg38.sh
+sbatch ../ecDNA_reconstruction/run_decoil_v112_07022024_slurmarray_celllines_hg19.sh
+sbatch ../ecDNA_reconstruction/run_decoil_v112_07022024_slurmarray_celllines_hg38.sh
 ```
 
 ### 4.2.3 Run reconstruction for patient samples
 
 ```bash
-sbatch run_decoil_v112_07022024_slurmarray.sh
+sbatch ../ecDNA_reconstruction/run_decoil_v112_07022024_slurmarray.sh
 ```

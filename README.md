@@ -67,7 +67,7 @@ Additionally, the reconstruction and de-novo assembly for cell lines are compare
 
 # 5. Paper figures
 
-Go to [figures](docs/figures.md)
+Go to `../data/figures`.
 
 
 ## Citation
