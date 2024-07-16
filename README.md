@@ -42,7 +42,7 @@ The raw sequencing is deposited under EGA50000000335.
   - Reconstruct ecDNA elements for patient samples using Decoil
   - Perform de-novo assembly for cell lines using Shasta
   - [Compare](docs/compare_shasta_decoil.md) Decoil and Shasta outputs against the against published ecDNA structures
-- ### 5. Paper figures
+- ### 5. Paper [figures](data/README.md)
 
 <br/><br/>
 

@@ -53,7 +53,7 @@ sbatch ../run_cluster.sh $rawdir $processdir
 
 ### 2.2.2 Output
 
-Pipeline output example for `simulate-mapping-sv` mode ([example sim_1501](https://zenodo.org/uploads/10785693/decoil-paper/data/simulation_benchmarking/simulation_ecDNA_samples/sim_1502)):
+Pipeline output example for `simulate-mapping-sv` mode ([example sim_1502](https://zenodo.org/records/10785693/files/sim_1502.tar.gz)):
 
 ```
 .
