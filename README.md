@@ -17,7 +17,8 @@ Scripts and analysis for the Giurgiu et al. 2024. "Reconstructing extrachromosom
 
 ## Zenodo
 To access the data linked to this analysis go to https://zenodo.org/uploads/10785693.
-The raw sequencing is deposited under EGA50000000335.
+The raw have been submitted to the EGA repository (https://ega-archive.org/) under studies
+EGAS50000000348 and EGAS50000000349.
 
 ## Code and analysis for the paper (overview):
 - ### 1. [Decoil development](docs/decoil.md)
