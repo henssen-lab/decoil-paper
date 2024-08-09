@@ -1,4 +1,4 @@
-Scripts and analysis for the Giurgiu et al. 2024. "Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil".
+Scripts and analysis for the Giurgiu et al. Genome Research 2024. "Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil".
 
 ## Software release:
 
@@ -73,9 +73,22 @@ Go to `../data/figures`.
 
 ## Citation
 
-If you use this code please cite our pre-print:
+If you use this code please cite our publication:
 
-Madalina Giurgiu, Nadine Wittstruck, Elias Rodriguez-Fos, Rocio Chamorro Gonzalez, Lotte Bruckner, Annabell Krienelke-Szymansky, Konstantin Helmsauer, Anne Hartebrodt, Richard P. Koche, Kerstin Haase, Knut Reinert, Anton G. Henssen. Decoil: Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil. bioRxiv, 2023, DOI: https://doi.org/10.1101/2023.11.15.567169
+Madalina Giurgiu, Nadine Wittstruck, Elias Rodriguez-Fos, Rocio Chamorro Gonzalez, Lotte Bruckner, Annabell Krienelke-Szymansky, Konstantin Helmsauer, Anne Hartebrodt, Philipp Euskirchen, Richard P. Koche, Kerstin Haase*, Knut Reinert*, Anton G. Henssen*.**Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil**. _Genome Research 2024_, DOI: [https://doi.org/10.1101/gr.279123.124](https://doi.org/10.1101/gr.279123.124)
+
+```
+@article{Giurgiu2024ReconstructingDecoil,
+    title = {{Reconstructing extrachromosomal DNA structural heterogeneity from long-read sequencing data using Decoil}},
+    year = {2024},
+    journal = {Genome Research},
+    author = {Giurgiu, Madalina and Wittstruck, Nadine and Rodriguez-Fos, Elias and Chamorro Gonzalez, Rocio and Brueckner, Lotte and Krienelke-Szymansky, Annabell and Helmsauer, Konstantin and Hartebrodt, Anne and Euskirchen, Philipp and Koche, Richard P. and Haase, Kerstin and Reinert, Knut and Henssen, Anton G.},
+    month = {8},
+    pages = {gr.279123.124},
+    doi = {10.1101/gr.279123.124},
+    issn = {1088-9051}
+}
+```
 
 ## License
 
