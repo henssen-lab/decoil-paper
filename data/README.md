@@ -10,7 +10,7 @@ Go to figures here https://zenodo.org/uploads/10785693 having the structure:
 - [Supplemental_Fig_S4](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item293)
 - [Supplemental_Fig_S5](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item306)
 - [Supplemental_Fig_S6](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item207)
-- Supplemental_Fig_S7 - Biorender
+- [Supplemental_Fig_S7](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item216) - Validate_shasta_vs_decoil_vs_cresil.ipynb
 - [Supplemental_Fig_S8](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item383)
 - [Supplemental_Fig_S9](https://zenodo.org/records/10785693/preview/decoil-paper_16072024.zip?include_deleted=0#tree_item301)
 - Supplemental_Fig_S10 - Biorender
